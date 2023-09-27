@@ -2,7 +2,7 @@
 @import "_vars";
 
 // Сброс
-// @import "vendor/reset";
+@import "vendor/reset";
 @import "vendor/btn";
 
 // Подключение контейнера
@@ -53,12 +53,12 @@ html {
 }
 
 body {
-    color: #000; // Стандартный цвет шрифта
+    color: #fff; // Стандартный цвет шрифта
     font-size: 1.4rem; // Стандартный размер шрифта
     font-family: "PP Neue Machina"; // Подлкюченые шрифты
     font-weight: 400;
     line-height: 1.5;
-    background-color: #fff;
+    background-color: $bg-color;
 
     &::-webkit-scrollbar {
         width: 0px;
@@ -78,4 +78,5 @@ body {
 /* Blocks */
 
 @import "blocks/header";
+@import "blocks/nav-header";
 @import "blocks/footer";

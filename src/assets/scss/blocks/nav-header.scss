@@ -1,0 +1,39 @@
+.nav-header {
+    // .nav-header__list
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 16.5px;
+    }
+    // .nav-header__item
+    &__item {
+        // ._active
+        &._active {
+            & > .nav-header__link {
+                color: $activeNavItem;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    // .nav-header__link
+    &__link {
+        transition: 0.25s ease-in-out all;
+
+        opacity: 0.5;
+        text-align: center;
+        font-family: "Raleway";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @media (any-hover: hover) {
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
