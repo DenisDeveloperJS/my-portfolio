@@ -24,7 +24,7 @@
 @import "vendor/custom-checkbox";
 
 // Подключение иконочных шрифтов
-// @import 'vendor/iconfonts';
+@import "vendor/iconfonts";
 
 // Подключение миксинов
 // @import 'mixins'
@@ -55,7 +55,7 @@ html {
 body {
     color: #fff; // Стандартный цвет шрифта
     font-size: 1.4rem; // Стандартный размер шрифта
-    font-family: "PP Neue Machina"; // Подлкюченые шрифты
+    font-family: "Raleway"; // Подлкюченые шрифты
     font-weight: 400;
     line-height: 1.5;
     background-color: $bg-color;
