@@ -1,0 +1,134 @@
+.projects-video-card {
+    padding: 3rem;
+
+    max-width: 500px;
+    max-height: 400px;
+
+    &:nth-child(odd) {
+        background: rgba(123, 74, 226, 0.1);
+    }
+    border-radius: 16px;
+    border: 1px solid rgba(123, 74, 226, 0.5);
+
+    @media (max-width: $md2) {
+        padding: 2.4rem;
+        max-height: none;
+    }
+
+    @media (max-width: $md3) {
+        width: 100%;
+    }
+
+    // .projects-video-card__video
+    &__video {
+        border-radius: 16px;
+        margin-bottom: 2.3rem;
+
+        max-width: 442px;
+        height: auto;
+        object-fit: cover;
+
+        @media (max-width: $md2) {
+            margin-bottom: 1.6rem;
+            width: 100%;
+        }
+    }
+    // .projects-video-card__bottom
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $md2) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    // .projects-video-card__left
+    &__left {
+    }
+    // .projects-video-card__title
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+
+        display: block;
+
+        @media (max-width: $md2) {
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+    }
+    // .projects-video-card__subtitle
+    &__subtitle {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 18px;
+        font-weight: 400;
+
+        @media (max-width: $md2) {
+            margin-bottom: 8px;
+            font-size: 1.4rem;
+        }
+    }
+    // .projects-video-card__right
+    &__right {
+        @media (max-width: $md2) {
+            width: 100%;
+        }
+    }
+    &__categories {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        @media (max-width: $md2) {
+            gap: 5px;
+            width: 100%;
+        }
+    }
+    // .projects-video-card__play
+    &__play {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+
+        cursor: pointer;
+
+        @media (any-hover: hover) {
+            &:hover {
+                span {
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+
+        span {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+            font-weight: 400;
+            text-align: end;
+
+            transition: 0.25s ease-in-out all;
+
+            @media (max-width: $md2) {
+                font-size: 14px;
+            }
+        }
+
+        img {
+            width: 18px;
+            height: 18px;
+        }
+
+        margin-top: 0.8rem;
+
+        @media (max-width: $md2) {
+            width: 100%;
+            justify-content: flex-end;
+
+            margin-top: 2.4rem;
+        }
+    }
+}

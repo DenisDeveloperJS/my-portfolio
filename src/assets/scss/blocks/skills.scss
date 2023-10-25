@@ -1,0 +1,35 @@
+.skills {
+    @media (max-width: $md1) {
+        display: none;
+    }
+    // .skills__content
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0rem 2rem;
+        height: 11rem;
+        max-width: 90rem;
+        margin: 0 auto;
+
+        border-radius: 16px;
+        background: rgba(123, 74, 226, 0.1);
+    }
+    // .skills__item
+    &__item {
+    }
+    // .skills__subtitle
+    &__subtitle {
+        font-size: 16px;
+        color: $purple-text;
+        text-align: center;
+    }
+    // .skills__title
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        color: $purple-text;
+        text-align: center;
+    }
+}

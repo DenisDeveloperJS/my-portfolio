@@ -1,0 +1,20 @@
+.icon-title {
+    border-radius: 16px;
+    background: rgba(123, 74, 226, 0.1);
+    padding: 5px 10px;
+    display: inline-block;
+
+    // .icon-title__text
+    &__text {
+        color: #7b4ae2;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @media (max-width: $md2) {
+            font-size: 1.4rem;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.projects {
+    margin-bottom: 10rem;
+
+    @media (max-width: $md2) {
+        margin-bottom: 3.5rem;
+    }
+    // .projects__content
+    &__content {
+    }
+    // .projects__icon-title
+    &__icon-title {
+        margin-bottom: 2.8rem;
+
+        @media (max-width: $md2) {
+            margin-bottom: 1.6rem;
+        }
+    }
+    // .projects__head
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 10rem;
+
+        @media (max-width: $md2) {
+            margin-bottom: 3.2rem;
+            flex-direction: column;
+        }
+    }
+    // .projects__title
+    &__title {
+        @media (max-width: $md2) {
+            margin-bottom: 3.2rem;
+        }
+    }
+    // .projects__skills
+    &__skills {
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+
+        @media (max-width: $md2) {
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+    }
+    // .projects__skills-item
+    &__skills-item {
+        padding: 1rem 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+        border-radius: 16px;
+        border: 1px solid rgba(123, 74, 226, 0.5);
+
+        &:nth-child(even) {
+            background: rgba(123, 74, 226, 0.1);
+        }
+
+        @media (max-width: $md2) {
+            gap: 8px;
+            padding: 8px;
+        }
+    }
+    // .projects__skills-img
+    &__skills-img {
+        width: 4.5rem;
+        height: 4rem;
+
+        @media (max-width: $md2) {
+            width: 27px;
+            height: 24px;
+        }
+    }
+    // .projects__skills-text
+    &__skills-text {
+        color: rgba(123, 74, 226, 0.5);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        white-space: nowrap;
+
+        @media (max-width: $md2) {
+            font-size: 14px;
+        }
+    }
+    // .projects__body
+    &__body {
+        margin-bottom: 4.8rem;
+        @media (max-width: $md2) {
+            margin-bottom: 2rem;
+        }
+    }
+    // .projects__portfolio
+    &__portfolio {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4.8rem 5.6rem;
+        justify-content: center;
+
+        @media (max-width: $md2) {
+            gap: 1.6rem;
+        }
+    }
+    // .projects__card
+    &__card {
+    }
+    &__all-link {
+        color: rgba(123, 74, 226, 0.5);
+        font-size: 20px;
+        font-weight: 600;
+        text-align: end;
+
+        display: block;
+
+        @media (max-width: $md2) {
+            margin-bottom: 1.4rem;
+            font-size: 1.4rem;
+        }
+    }
+}

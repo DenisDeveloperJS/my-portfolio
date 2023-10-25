@@ -1,0 +1,103 @@
+.portfolio-card {
+    max-width: 360px;
+
+    border-radius: 16px;
+    border: 1px solid rgba(123, 74, 226, 0.5);
+
+    &:nth-child(odd) {
+        background: rgba(123, 74, 226, 0.1);
+        border: none;
+    }
+
+    @media (max-width: $md3) {
+        width: 100%;
+    }
+    // .portfolio-card__content
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 3rem;
+        height: 100%;
+
+        @media (max-width: $md2) {
+            padding: 2.7rem 2.4rem;
+        }
+    }
+    // .portfolio-card__top
+    &__top {
+    }
+    // .portfolio-card__link
+    &__link {
+        font-size: 20px;
+        font-weight: 700;
+
+        @media (max-width: $md2) {
+            font-size: 16px;
+        }
+    }
+    // .portfolio-card__description
+    &__description {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        font-weight: 400;
+
+        min-height: 100px;
+        margin-top: 8.5px;
+        margin-bottom: 25px;
+
+        @media (max-width: $md2) {
+            margin-bottom: 1rem;
+        }
+    }
+    // .portfolio-card__bottom
+    &__bottom {
+    }
+    // .portfolio-card__categories
+    &__categories {
+    }
+    // .portfolio-card__category
+    &__category {
+        color: #7b4ae2;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        padding: 5px 8px;
+        background: rgba(123, 74, 226, 0.1);
+        border-radius: 8px;
+        display: inline;
+
+        // ._online
+        &._online {
+            color: #4ae290;
+            background: rgba(74, 226, 144, 0.3);
+        }
+        // ._language
+        &._language {
+            color: #7b4ae2;
+            background: rgba(123, 74, 226, 0.1);
+        }
+
+        @media (max-width: $md2) {
+            font-size: 12px;
+        }
+    }
+    // .portfolio-card__img
+    &__img {
+        border-radius: 8px;
+        overflow: hidden;
+
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-top: 2.2rem;
+
+        @media (max-width: $md2) {
+            margin-top: 1.6rem;
+        }
+    }
+}

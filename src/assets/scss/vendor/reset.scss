@@ -358,6 +358,15 @@ html input[disabled] {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+
+a {
+    @media (any-hover: hover) {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 /**

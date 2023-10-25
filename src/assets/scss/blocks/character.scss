@@ -1,0 +1,148 @@
+.character {
+    // .character__content
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $md2) {
+            flex-direction: column;
+        }
+    }
+    // .character__left
+    &__left {
+        @media (max-width: $md2) {
+            order: 2;
+        }
+    }
+    // .character__title-icon
+    &__title-icon {
+        margin-bottom: 2.8rem;
+
+        @media (max-width: $md2) {
+            margin-bottom: 1.6rem;
+        }
+    }
+    // .character__title
+    &__title {
+        color: #fff;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 1.6rem;
+
+        @media (max-width: $md2) {
+            font-size: 4.8rem;
+            margin-bottom: 4px;
+        }
+    }
+    // .character__subtitle
+    &__subtitle {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        margin-bottom: 2.6rem;
+
+        @media (max-width: $md2) {
+            margin-bottom: 2rem;
+        }
+    }
+    // .character__social
+    &__social {
+        @media (max-width: $md2) {
+            display: none;
+        }
+    }
+    // .character__photo
+    &__photo {
+        max-width: 510px;
+        height: auto;
+    }
+    // .character__avatar
+    &__avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @media (max-width: $md2) {
+            order: 1;
+
+            margin-bottom: 30.8px;
+        }
+    }
+    // .character__right
+    &__right {
+        @media (max-width: $md2) {
+            order: 3;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.6rem;
+        }
+    }
+    // .character__download-cv
+    &__download-cv {
+        color: rgba(123, 74, 226, 0.5);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: end;
+
+        margin-bottom: 8px;
+
+        span {
+            @media (max-width: $md2) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    // .character__whatsapp-call
+    &__whatsapp-call {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        border-radius: 16px;
+        border: 1px solid rgba(123, 74, 226, 0.5);
+        padding: 1.4rem 1.5rem;
+
+        color: rgba(123, 74, 226, 0.5);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        min-width: 196px;
+
+        transition: 0.3s ease-in-out all;
+
+        @media (max-width: $md2) {
+            padding: 1.2rem 1rem;
+        }
+
+        span {
+            font-size: 24px;
+            color: rgba(123, 74, 226, 0.5);
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: #000;
+
+                border: 1px solid #fff;
+                background-color: #fff;
+
+                span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

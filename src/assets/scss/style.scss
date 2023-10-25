@@ -57,7 +57,7 @@ body {
     font-size: 1.4rem; // Стандартный размер шрифта
     font-family: "Raleway"; // Подлкюченые шрифты
     font-weight: 400;
-    line-height: 1.5;
+    line-height: normal;
     background-color: $bg-color;
 
     &::-webkit-scrollbar {
@@ -80,3 +80,15 @@ body {
 @import "blocks/header";
 @import "blocks/nav-header";
 @import "blocks/footer";
+@import "blocks/title";
+@import "blocks/social-media";
+@import "blocks/character";
+@import "blocks/icon-title";
+@import "blocks/experience";
+@import "blocks/skills";
+@import "blocks/skills-info";
+@import "blocks/about-me";
+@import "blocks/projects.scss";
+@import "blocks/portfolio-card.scss";
+@import "blocks/projects-video-card.scss";
+@import "blocks/projects-video.scss";

@@ -4,6 +4,11 @@
 
     padding: 0 14rem;
     padding-top: 11.9rem;
+    padding-bottom: 10.1rem;
+
+    @media (max-width: $md2) {
+        display: none;
+    }
 
     // .header__content
     &__content {

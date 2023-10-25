@@ -1,0 +1,14 @@
+.skills-info {
+    margin-top: 18.6rem;
+
+    @media (max-width: $md2) {
+        margin-top: 7.2rem;
+    }
+    &__content {
+        padding: 10rem 0;
+
+        @media (max-width: $md2) {
+            padding: 0;
+        }
+    }
+}

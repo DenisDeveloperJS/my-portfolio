@@ -1,0 +1,33 @@
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    // .social-media__item
+    &__item {
+        transition: 0.25s ease-in-out all;
+
+        span {
+            font-size: 32px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &._header {
+        display: none;
+
+        @media (max-width: $md2) {
+            display: flex;
+
+            justify-content: center;
+            margin-top: 3.2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
